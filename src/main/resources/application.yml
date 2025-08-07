@@ -1,0 +1,39 @@
+server:
+  servlet:
+    context-path: /Ecommerce
+  port: 10010
+
+spring:
+  application:
+    name: Client
+  profiles:
+    active: dev
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        order_inserts: true
+        order_updates: true
+        generate_statistics: false
+  flyway:
+    enabled: true
+    group: false
+    outOfOrder: true
+  security:
+    user:
+      name: juanfer
+      password: pass1234
+
+logging:
+  level:
+    org:
+      springframework:
+        security: trace
+
+environment:
+  database-url: jdbc:mysql://localhost:3306/cliente
+  database-username: cliente
+  database-password: cliente
+
+
