@@ -35,3 +35,6 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### Generated files by Mapping ###
+src/main/generated/
